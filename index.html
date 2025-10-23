@@ -1,13 +1,260 @@
-<!doctype html>
-<html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Parcial 2</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+    <title>Guía Académica | Desarrollo de Software</title>
+    <!-- Carga de Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Estilo personalizado simple para mejorar la legibilidad y el aspecto -->
+    <style>
+        body {
+            background-color: #f8f9fa; /* Fondo claro */
+        }
+        .section-title {
+            border-left: 5px solid #0d6efd; /* Borde azul primario para títulos de sección */
+            padding-left: 1rem;
+        }
+        .nav-link.active {
+            font-weight: bold;
+            color: white !important;
+            background-color: #0d6efd; /* Azul primario de Bootstrap */
+            border-radius: 0.375rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado y Navegación (Header y Navbar) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm" aria-label="Navegación principal">
+            <div class="container">
+                <!-- Título Principal -->
+                <a class="navbar-brand fs-4 fw-bold text-info" href="#">Guía Académica</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!-- Menú de las 4 páginas -->
+                        <li class="nav-item">
+                            <a class="nav-link active px-3" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="aplicaciones-web.html">Aplicaciones web</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="frameworks.html">Frameworks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="creditos.html">Créditos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal (Main) -->
+    <main class="container my-5">
+        <section id="inicio" class="p-4 p-md-5 bg-white rounded-3 shadow-lg">
+            <h2 class="display-5 fw-bold text-primary mb-4 border-bottom pb-2">Desarrollo de Software: Guía Introductoria</h2>
+            
+            <article>
+                
+                <!-- a. Proyecto de Software -->
+                <section class="mb-5">
+                    <h3 class="h3 fw-semibold section-title text-dark">a. Proyecto de Software</h3>
+                    
+                    <div class="row mt-3 g-4">
+                        <!-- 1. Concepto y Características -->
+                        <div class="col-md-4">
+                            <div class="card h-100 border-primary shadow-sm">
+                                <div class="card-body">
+                                    <h4 class="card-title text-primary fs-5">1. Concepto y Características</h4>
+                                    <p class="card-text text-muted">
+                                        Un proyecto de software es un esfuerzo único, temporal y planificado, dirigido a crear un producto o servicio de software específico. Se caracteriza por tener un inicio y fin definidos, objetivos claros, y la necesidad de gestión de recursos y riesgos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Alcances y Secuencia -->
+                        <div class="col-md-4">
+                            <div class="card h-100 border-primary shadow-sm">
+                                <div class="card-body">
+                                    <h4 class="card-title text-primary fs-5">2. Alcances y Secuencia</h4>
+                                    <p class="card-text text-muted">
+                                        El **Alcance** define qué se incluirá (funcionalidades) y qué no, limitando el trabajo. La **Secuencia** (o cronograma) organiza las tareas en fases lógicas (planificación, diseño, codificación) para garantizar la entrega ordenada.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 3. Ejemplos -->
+                        <div class="col-md-4">
+                            <div class="card h-100 border-primary shadow-sm">
+                                <div class="card-body">
+                                    <h4 class="card-title text-primary fs-5">3. Ejemplos</h4>
+                                    <ul class="list-group list-group-flush small">
+                                        <li class="list-group-item">Desarrollo de una app móvil para reservas.</li>
+                                        <li class="list-group-item">Implementación de un sistema ERP.</li>
+                                        <li class="list-group-item">Creación de un módulo de seguridad en un portal web.</li>
+                                        <li class="list-group-item">Actualización de un sistema operativo.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- b. Tipos de Proyectos de Software -->
+                <section class="mb-5">
+                    <h3 class="h3 fw-semibold section-title text-dark">b. Tipos de Proyectos de Software</h3>
+                    <p class="lead text-secondary mt-3">La clasificación de proyectos depende del entorno o plataforma donde el software será ejecutado:</p>
+                    
+                    <ul class="list-group list-group-flush border rounded">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            1. Aplicaciones Web
+                            <span class="badge bg-success rounded-pill">Navegador</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            2. Aplicaciones Móviles
+                            <span class="badge bg-success rounded-pill">iOS/Android</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            3. Aplicaciones para Escritorio
+                            <span class="badge bg-success rounded-pill">PC/Mac/Linux</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            4. Sistemas Embebidos
+                            <span class="badge bg-success rounded-pill">Hardware Específico</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            5. Desarrollo de Videojuegos
+                            <span class="badge bg-success rounded-pill">Entretenimiento</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            6. Otro (Ej. Sistemas de I.A.)
+                            <span class="badge bg-success rounded-pill">Aprendizaje/Datos</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- c. Ciclo de Vida del Software (SDLC) -->
+                <section class="mb-5">
+                    <h3 class="h3 fw-semibold section-title text-dark">c. Ciclo de Vida del Software y sus Fases</h3>
+                    <p class="mt-3 text-secondary">El SDLC (Software Development Life Cycle) es una metodología para producir software de alta calidad y bajo costo.</p>
+                    
+                    <div class="accordion" id="sdlcAccordion">
+                        <!-- 1. Planificación -->
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    1. Planificación
+                                </button>
+                            </h4>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#sdlcAccordion">
+                                <div class="accordion-body text-muted">
+                                    Fase inicial donde se define el objetivo del proyecto, se establece el alcance, se estiman los costos y se elabora el cronograma.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2. Análisis -->
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    2. Análisis
+                                </button>
+                            </h4>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#sdlcAccordion">
+                                <div class="accordion-body text-muted">
+                                    Se recopilan y documentan los requisitos del sistema, especificando qué debe hacer el software para satisfacer las necesidades del usuario.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3. Diseño -->
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    3. Diseño
+                                </button>
+                            </h4>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#sdlcAccordion">
+                                <div class="accordion-body text-muted">
+                                    Se crea la arquitectura del sistema, la interfaz de usuario, y se definen los módulos, bases de datos y algoritmos a utilizar.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4. Desarrollo -->
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    4. Desarrollo (Codificación)
+                                </button>
+                            </h4>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#sdlcAccordion">
+                                <div class="accordion-body text-muted">
+                                    Se escribe el código fuente del software basándose en las especificaciones de la fase de diseño.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 5. Pruebas -->
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    5. Pruebas
+                                </button>
+                            </h4>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#sdlcAccordion">
+                                <div class="accordion-body text-muted">
+                                    Se realizan tests (unitarios, integración, sistema) para identificar y corregir errores, asegurando que el software cumple con los requisitos.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 6. Implementación -->
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    6. Implementación
+                                </button>
+                            </h4>
+                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#sdlcAccordion">
+                                <div class="accordion-body text-muted">
+                                    El software se instala y se pone en funcionamiento en el entorno real de los usuarios.
+                                </div>
+                            </div>
+                        </div>
+                         <!-- 7. Mantenimiento -->
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    7. Mantenimiento
+                                </button>
+                            </h4>
+                            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#sdlcAccordion">
+                                <div class="accordion-body text-muted">
+                                    Actividades post-implementación para corregir fallos, mejorar el rendimiento y adaptar el software a cambios en el entorno o requisitos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de página (Footer) -->
+    <footer class="footer bg-dark text-white p-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Guía Académica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script de Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
 </html>

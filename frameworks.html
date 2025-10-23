@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guía Académica | Frameworks</title>
+    <!-- Carga de Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Estilo personalizado copiado del index para coherencia -->
+    <style>
+        body {
+            background-color: #f8f9fa; /* Fondo claro */
+        }
+        .section-title {
+            border-left: 5px solid #0d6efd; /* Borde azul primario para títulos de sección */
+            padding-left: 1rem;
+        }
+        .nav-link.active {
+            font-weight: bold;
+            color: white !important;
+            background-color: #0d6efd; /* Azul primario de Bootstrap */
+            border-radius: 0.375rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado y Navegación (Header y Navbar) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm" aria-label="Navegación principal">
+            <div class="container">
+                <!-- Título Principal -->
+                <a class="navbar-brand fs-4 fw-bold text-info" href="index.html">Guía Académica</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!-- Menú de las 4 páginas -->
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="aplicaciones-web.html">Aplicaciones web</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active px-3" aria-current="page" href="#">Frameworks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="creditos.html">Créditos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal (Main) -->
+    <main class="container my-5">
+        <section id="frameworks" class="p-4 p-md-5 bg-white rounded-3 shadow-lg">
+            <h2 class="display-5 fw-bold text-primary mb-4 border-bottom pb-2">Frameworks en el Desarrollo de Software</h2>
+            <p class="lead text-secondary">
+                Los frameworks son herramientas esenciales que estructuran y aceleran el proceso de desarrollo, proporcionando una base sólida de código y reglas para construir aplicaciones de manera eficiente.
+            </p>
+            
+            <article>
+                
+                <!-- a. Concepto de Framework -->
+                <section class="mb-5">
+                    <h3 class="h3 fw-semibold section-title text-dark">a. Concepto de Framework</h3>
+                    <div class="alert alert-primary mt-3" role="alert">
+                        <h4 class="alert-heading fs-5">Definición Detallada</h4>
+                        <p>
+                            Un **Framework** (marco de trabajo) es un conjunto de herramientas, librerías y convenciones preescritas que proveen una estructura de esqueleto o plantilla para construir una aplicación. A diferencia de una librería, que simplemente provee funciones para ser llamadas, el framework dicta la **Arquitectura** de la aplicación, es decir, cómo deben organizarse sus componentes.
+                        </p>
+                        <hr>
+                        <p class="mb-0 small">
+                            **Principio Clave:** Se rige por el principio de **Inversión de Control (IoC)**, conocido popularmente como "No nos llamas tú a nosotros, nosotros te llamamos a ti". Esto significa que el framework controla el flujo general de la aplicación, y el desarrollador solo se encarga de llenar los espacios vacíos con la lógica de negocio específica. 
+                        </p>
+                    </div>
+                </section>
+
+                <!-- b. Ventajas y Desventajas -->
+                <section class="mb-5">
+                    <h3 class="h3 fw-semibold section-title text-dark">b. Ventajas y Desventajas</h3>
+                    <div class="row mt-3 g-4">
+                        <!-- Ventajas -->
+                        <div class="col-md-6">
+                            <div class="card h-100 border-success shadow-sm">
+                                <div class="card-body">
+                                    <h4 class="card-title text-success fs-5">Ventajas (Aceleración y Calidad)</h4>
+                                    <ul class="list-group list-group-flush small">
+                                        <li class="list-group-item text-muted"><strong>Reutilización de Código:</strong> Ofrecen módulos preconstruidos para tareas comunes (manejo de sesiones, seguridad).</li>
+                                        <li class="list-group-item text-muted"><strong>Seguridad:</strong> Incorporan medidas de seguridad estándar contra vulnerabilidades comunes (CSRF, XSS).</li>
+                                        <li class="list-group-item text-muted"><strong>Estandarización:</strong> Impone una estructura organizada y mantenible, facilitando el trabajo en equipo.</li>
+                                        <li class="list-group-item text-muted"><strong>Eficiencia:</strong> Reduce drásticamente el tiempo de desarrollo al no tener que codificar todo desde cero.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Desventajas -->
+                        <div class="col-md-6">
+                            <div class="card h-100 border-danger shadow-sm">
+                                <div class="card-body">
+                                    <h4 class="card-title text-danger fs-5">Desventajas (Curva y Flexibilidad)</h4>
+                                    <ul class="list-group list-group-flush small">
+                                        <li class="list-group-item text-muted"><strong>Curva de Aprendizaje:</strong> Requieren tiempo para dominar su estructura y convenciones específicas.</li>
+                                        <li class="list-group-item text-muted"><strong>Sobrepeso (Bloat):</strong> Pueden incluir código y funcionalidades que no se utilizarán en proyectos pequeños, aumentando el tamaño.</li>
+                                        <li class="list-group-item text-muted"><strong>Limitaciones:</strong> Si una funcionalidad requerida no está prevista por el framework, puede ser complejo o imposible de implementar.</li>
+                                        <li class="list-group-item text-muted"><strong>Menor Control:</strong> Se pierde cierto control sobre el bajo nivel de la aplicación debido a la abstracción.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- c. Frameworks Frontend más utilizados -->
+                <section class="mb-5">
+                    <h3 class="h3 fw-semibold section-title text-dark">c. Frameworks Frontend más utilizados</h3>
+                    <p class="lead text-secondary mt-3">Utilizados para crear interfaces de usuario dinámicas y reactivas, controlando el DOM de manera eficiente.</p>
+                    
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="card text-center bg-light h-100 shadow">
+                                <div class="card-body">
+                                    <h5 class="card-title text-info">React (Librería/Framework)</h5>
+                                    <p class="card-text small text-muted">Desarrollado por Facebook/Meta. Utiliza componentes y el **Virtual DOM** para optimizar las actualizaciones de la interfaz. Es uno de los más populares del mundo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center bg-light h-100 shadow">
+                                <div class="card-body">
+                                    <h5 class="card-title text-info">Angular</h5>
+                                    <p class="card-text small text-muted">Framework robusto desarrollado por Google. Usa TypeScript y sigue el patrón **MVC/MVVM**. Ideal para aplicaciones empresariales grandes y escalables (Single Page Applications - SPA).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center bg-light h-100 shadow">
+                                <div class="card-body">
+                                    <h5 class="card-title text-info">Vue.js</h5>
+                                    <p class="card-text small text-muted">Conocido por su curva de aprendizaje suave. Es progresivo y se puede adoptar en partes, desde una pequeña característica hasta una SPA completa. Combina lo mejor de React y Angular.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- d. Frameworks Backend más utilizados -->
+                <section class="mb-5">
+                    <h3 class="h3 fw-semibold section-title text-dark">d. Frameworks Backend más utilizados</h3>
+                    <p class="lead text-secondary mt-3">Proporcionan la estructura necesaria para construir la lógica de negocio, APIs y manipular la base de datos.</p>
+                    
+                    <div class="accordion" id="backendAccordion">
+                        
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNode" aria-expanded="false" aria-controls="collapseNode">
+                                    Node.js: Express.js
+                                </button>
+                            </h4>
+                            <div id="collapseNode" class="accordion-collapse collapse" data-bs-parent="#backendAccordion">
+                                <div class="accordion-body text-muted small">
+                                    Framework minimalista y flexible para Node.js, basado en JavaScript. Es muy popular para construir APIs RESTful rápidas y para proyectos que desean usar JavaScript en todo el stack.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePython" aria-expanded="false" aria-controls="collapsePython">
+                                    Python: Django / Flask
+                                </button>
+                            </h4>
+                            <div id="collapsePython" class="accordion-collapse collapse" data-bs-parent="#backendAccordion">
+                                <div class="accordion-body text-muted small">
+                                    **Django** es un framework "batteries included" (todo en uno), ideal para proyectos grandes que necesitan ORM, sistema de administración y seguridad. **Flask** es un micro-framework ligero, perfecto para APIs sencillas.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePHP" aria-expanded="false" aria-controls="collapsePHP">
+                                    PHP: Laravel
+                                </button>
+                            </h4>
+                            <div id="collapsePHP" class="accordion-collapse collapse" data-bs-parent="#backendAccordion">
+                                <div class="accordion-body text-muted small">
+                                    Moderno, elegante y completo. Laravel sigue el patrón MVC y facilita tareas como el enrutamiento, la autenticación y el manejo de bases de datos con Eloquent ORM.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h4 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJava" aria-expanded="false" aria-controls="collapseJava">
+                                    Java: Spring
+                                </button>
+                            </h4>
+                            <div id="collapseJava" class="accordion-collapse collapse" data-bs-parent="#backendAccordion">
+                                <div class="accordion-body text-muted small">
+                                    Framework masivo y maduro, muy utilizado en la industria a nivel empresarial. Spring Boot simplifica la configuración, permitiendo el desarrollo rápido de microservicios y aplicaciones robustas.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de página (Footer) -->
+    <footer class="footer bg-dark text-white p-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Guía Académica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script de Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
